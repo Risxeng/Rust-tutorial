@@ -4,25 +4,40 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let [counter, setCounter] = useState(13)
+  let [counter, setCounter] = useState(15)
   // let counter = 15
-                                          //HW
+
+                                          //HW_2
   const addvalue = () => {
-    if (counter < 20) {
-      setCounter(counter + 1)
-      console.log("value added" , counter+1);
-    }else{
-      console.log("value excedded");
-    }
+    setCounter(prevCounter => prevCounter + 1 )
+    setCounter(prevCounter => prevCounter + 1 )
+    setCounter(prevCounter => prevCounter + 1 )
+    setCounter(prevCounter => prevCounter + 1 )
+
   }
   const removevalue = () => {
-    if (counter > 0) {
-      setCounter(counter - 1)
-      console.log("value added" , counter-1);
-    }else{
-      console.log("counter can't be negative");
-    }
+    setCounter(prevCounter => prevCounter - 1 )
+    setCounter(prevCounter => prevCounter - 1 )
+    setCounter(prevCounter => prevCounter - 1 )
+
   }
+                                          //HW_1
+  // const addvalue = () => {
+  //   if (counter < 20) {
+  //     setCounter(counter + 1)
+  //     console.log("value added" , counter+1);
+  //   }else{
+  //     console.log("value excedded");
+  //   }
+  // }
+  // const removevalue = () => {
+  //   if (counter > 0) {
+  //     setCounter(counter - 1)
+  //     console.log("value added" , counter-1);
+  //   }else{
+  //     console.log("counter can't be negative");
+  //   }
+  // }
 
                                           //practise
   // const addvalue = () => {
